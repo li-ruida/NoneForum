@@ -11,7 +11,8 @@ public class PostInteraction {
     private long postId;
     private long casVersion;//cas版本号
     private long updateTime;
-    private long lastUpdateTime;//上一次实时数据写入时间
+    private long lastTotalUpdateTime;//上一次实时数据写入时间 累计数据
+    private long lastGapUpdateTime;//上一次实时数据写入时间 变化时间
     /*
     总数据量
      */
@@ -22,6 +23,7 @@ public class PostInteraction {
     private long shares;
     private BigDecimal sponsorshipAmount;//赞助金额
     private double score;//得分
+    private long comments;//评论数量
     /*
     实时数据量
      */
@@ -32,6 +34,7 @@ public class PostInteraction {
     private long sharesGap;
     private BigDecimal sponsorshipAmountGap;
     private double scoreGap;
+    private long commentsGap;
     /*
     权重数据
      */
