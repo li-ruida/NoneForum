@@ -17,7 +17,7 @@ public class Post {
     private String content;
     private String digest;//摘要
     private long numberOfWords;//字数
-    private long author;
+    private long authorId;
     private long createTime;
     private long updateTime;
     /*
@@ -33,7 +33,7 @@ public class Post {
     private String postTag;//帖子标签 List
     private String events;//参与活动
     private int copyright;//转载级别
-    private String Achievements;//成就
+    private String achievements;//成就
     private int label;//设置标签
     private long seriesId;//帖子归属集合
     private long seriesRankId;//集合排序
